@@ -1,0 +1,54 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: grey;
+}
+.cont {
+position: relative;
+margin-left: auto;
+background-color: greenyellow;
+width: 1677px
+}
+.container {
+  background-color: aqua;
+  width: 1240px;
+  height: 500px;
+  margin: 10px auto;
+}
+.x400{
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+  position: relative;
+  gap: 50px;
+}
+.x400 img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.right-button,
+.left-button {
+  background-color: red;
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(-50%);
+}
+.right-button{
+  left: 100px;
+}
+
+.cont .x400 {
+  scroll-snap-type: x mandatory;
+}
+
+.cont .x400 > img {
+  scroll-snap-align: start; 
+}
